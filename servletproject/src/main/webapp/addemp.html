@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert New Employee</title>
+<style>
+    body {
+        font-family: 'Helvetica', sans-serif;
+        background-color: #f0f2f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px; /* Add space below the heading */
+    }
+    form {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px; /* Add space above the form */
+    }
+    label {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    input {
+        width: calc(100% - 20px);
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+<h2>Insert New Employee</h2>
+<form action="insert"> <!-- Ensure the correct endpoint is set -->
+    <label for="id">Id:</label>
+    <input type="number" id="id" placeholder="Enter id" name="id" required>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter name" name="name" required>
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter age" name="age" required>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" placeholder="Enter salary" name="salary" required>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
